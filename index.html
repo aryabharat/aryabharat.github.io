@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        #intro {
+            background-color: #1a1a1d;
+            text-decoration-color: #c3073f;
+            background-image: url('back.jpg');
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+
+        }
+
+        h1 {
+            font-size: 120px !important;
+            font-weight: 700 !important;
+            color: white;
+            line-height: 1.1;
+            font-family: Roboto, sans-serif;
+            /* text-decoration: underline; */
+            padding-top: 15%;
+        }
+
+        .text-center:after {
+            content: "";
+            /* This is necessary for the pseudo element to work. */
+            display: block;
+            /* This will put the pseudo element on its own line. */
+            margin: 0 auto;
+            /* This will center the border. */
+            width: 60%;
+            /* Change this to whatever width you want. */
+            padding-top: 5px;
+            /* This creates some space between the element and the border. */
+            border-bottom: 5px solid white;
+            /* This creates the border. Replace black with whatever color you want. */
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+    <title>Bharat Arya</title>
+</head>
+
+<body>
+    <div id="intro">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center ">BHARAT ARYA</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="vanta/vendor/three.r92.min.js">
+</script>
+<script src="vanta/dist/vanta.birds.min.js"></script>
+<script>
+    VANTA.BIRDS({
+        el: "#intro",
+        backgroundColor: 0xb192a,
+        color1: 0x5f0aaa,
+        color2: 0x9fc9e1,
+        wingSpan: 10.00,
+        speedLimit: 1.00,
+        separation: 97.00,
+        alignment: 1.00,
+        cohesion: 100.00
+    })
+</script>
+
+
+</html>

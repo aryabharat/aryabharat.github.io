@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap&subset=latin-ext" rel="stylesheet">
+    <title>Bharat Arya</title>
+    <style>
+        #main {
+            width: 100%;
+            height: 100vh;
+            background-color: yellowgreen;
+        }
+
+        img {
+            width: 300px;
+            position: relative;
+            animation: 1s ease-out 0s 1 slideInFromBottom;
+            /* padding: 30px; */
+        }
+
+        @keyframes slideInFromBottom {
+            0% {
+                transform: translatey(+100%);
+            }
+
+            100% {
+                transform: translatey(0);
+            }
+        }
+
+        #showMe {
+            animation: cssAnimation 0s 1s forwards;
+            visibility: hidden;
+        }
+
+        @keyframes cssAnimation {
+            to {
+                visibility: visible;
+            }
+        }
+
+        h1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding-top: 18%;
+            font-family: 'Kaushan Script', cursive;
+            text-transform: none;
+            font-size: 8vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main" class="container-fluid">
+        <h1 id="showMe" class="centere">Hello World!!</h1>
+        <img id="bharat" class="slider mx-auto d-block fixed-bottom" src="avataaars(4).png" alt="Bharat">
+    </div>
+</body>
+
+</html>
+<script>
+    setTimeout(function(){
+  window.location = "index.html";
+ },4000);
+</script>
