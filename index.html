@@ -9,85 +9,66 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap&subset=latin-ext" rel="stylesheet">
+    <title>Bharat Arya</title>
     <style>
-        #intro {
-            background-color: #1a1a1d;
-            text-decoration-color: #c3073f;
-            background-image: url('back.jpg');
-            background-size: cover;
+        #main {
             width: 100%;
             height: 100vh;
-            background-size: cover;
+            background-color: yellowgreen;
+        }
 
+        img {
+            width: 300px;
+            position: relative;
+            animation: 1s ease-out 0s 1 slideInFromBottom;
+            /* padding: 30px; */
+        }
+
+        @keyframes slideInFromBottom {
+            0% {
+                transform: translatey(+100%);
+            }
+
+            100% {
+                transform: translatey(0);
+            }
+        }
+
+        #showMe {
+            animation: cssAnimation 0s 1s forwards;
+            visibility: hidden;
+        }
+
+        @keyframes cssAnimation {
+            to {
+                visibility: visible;
+            }
         }
 
         h1 {
-            font-size: 120px !important;
-            font-weight: 700 !important;
-            color: white;
-            line-height: 1.1;
-            font-family: Roboto, sans-serif;
-            /* text-decoration: underline; */
-            padding-top: 15%;
-        }
-
-        .text-center:after {
-            content: "";
-            /* This is necessary for the pseudo element to work. */
-            display: block;
-            /* This will put the pseudo element on its own line. */
-            margin: 0 auto;
-            /* This will center the border. */
-            width: 60%;
-            /* Change this to whatever width you want. */
-            padding-top: 5px;
-            /* This creates some space between the element and the border. */
-            border-bottom: 5px solid white;
-            /* This creates the border. Replace black with whatever color you want. */
-        }
-
-        .text-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             text-align: center;
+            padding-top: 18%;
+            font-family: 'Kaushan Script', cursive;
+            text-transform: none;
+            font-size: 8vw;
         }
     </style>
-    <title>Bharat Arya</title>
 </head>
 
 <body>
-    <div id="intro">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <h1 class="text-center ">BHARAT ARYA</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-
-                </div>
-            </div>
-        </div>
+    <div id="main" class="container-fluid">
+        <h1 id="showMe" class="centere">Hello World!!</h1>
+        <img id="bharat" class="slider mx-auto d-block fixed-bottom" src="avataaars(4).png" alt="Bharat">
     </div>
-
 </body>
 
-<script src="vanta/vendor/three.r92.min.js">
-</script>
-<script src="vanta/dist/vanta.birds.min.js"></script>
-<script>
-    VANTA.BIRDS({
-        el: "#intro",
-        backgroundColor: 0xb192a,
-        color1: 0x5f0aaa,
-        color2: 0x9fc9e1,
-        wingSpan: 10.00,
-        speedLimit: 1.00,
-        separation: 97.00,
-        alignment: 1.00,
-        cohesion: 100.00
-    })
-</script>
-
-
 </html>
+<script>
+    setTimeout(function(){
+  window.location = "main.html";
+ },4000);
+</script>
