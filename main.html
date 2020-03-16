@@ -26,10 +26,14 @@
             background-image: url('back.jpg');
             background-size: cover;
             width: 100%;
-            height: 100vh;
+            height: 100vmin;
             background-size: cover;
+            overflow:auto;
         }
-
+        .row
+        {
+            padding: 40px;;
+        }
         h1 {
             font-size: 120px !important;
             font-weight: 700 !important;
@@ -128,39 +132,38 @@
     <title>Bharat Arya</title>
 </head>
 
-<body>
-    <div id="intro">
+<body >
+    <div id="intro" >
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <h1 class="text-center ">BHARAT ARYA</h1>
+                    <h1 class="text-center "><span>BHARAT ARYA</span></h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <span class="fa fa-facebook">asds</span>
-                    <span></span>
+                    <div class="middle">
+                        <a class="btn" href="https://www.facebook.com/bharat.arya.583?ref=bookmarks">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn" href="https://www.linkedin.com/in/bharat-arya/">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a class="btn" href="https://github.com/aryabharat">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a class="btn" href="https://stackoverflow.com/users/8858359/bharat-arya">
+                            <i class="fab fa-stack-overflow"></i>
+                        </a>
+                        <a class="btn" href="https://www.instagram.com/bharat.arya/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="middle">
-        <a class="btn" href="https://www.facebook.com/bharat.arya.583?ref=bookmarks">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a class="btn" href="https://www.linkedin.com/in/bharat-arya/">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a class="btn" href="https://github.com/aryabharat">
-            <i class="fab fa-github"></i>
-        </a>
-        <a class="btn" href="https://stackoverflow.com/users/8858359/bharat-arya">
-            <i class="fab fa-stack-overflow"></i>
-        </a>
-        <a class="btn" href="https://www.instagram.com/bharat.arya/">
-            <i class="fab fa-instagram"></i>
-        </a>
-    </div>
+   
 
 </body>
 <script src="vanta/vendor/three.r92.min.js">
